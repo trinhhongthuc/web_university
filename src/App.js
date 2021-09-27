@@ -1,7 +1,9 @@
+import Header from "./layouts/header/Header";
 function App() {
   return (
     <div className="App">
-      <h1>First web</h1>
+      <Header />
+      {/* <h1>First web</h1> */}
     </div>
   );
 }
