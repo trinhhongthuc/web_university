@@ -4,6 +4,7 @@ import { FaUniversity } from "@react-icons/all-files/fa/FaUniversity";
 import { GoMortarBoard } from "@react-icons/all-files/go/GoMortarBoard";
 import { AiOutlineArrowUp } from "@react-icons/all-files/ai/AiOutlineArrowUp";
 import { FaRegAddressCard } from "@react-icons/all-files/fa/FaRegAddressCard";
+import Container from "@mui/material/Container";
 
 export const Training = () => {
   const styleDefault = {
@@ -12,7 +13,7 @@ export const Training = () => {
   };
 
   return (
-    <div className="container">
+    <Container>
       <ul className="training-list">
         <li className="training-list-item">
           <a href="/training" id="test">
@@ -53,6 +54,6 @@ export const Training = () => {
           </a>
         </li>
       </ul>
-    </div>
+    </Container>
   );
 };

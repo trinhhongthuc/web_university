@@ -1,8 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Jost:wght@200;300;500;700&display=swap");
+@import "./animation/animation";
 @import "./variable/variable.scss";
 @import "./base/base.scss";
 @import "./banner/banner.scss";
 @import "./contactLive/ContactLive.scss";
 @import "./trainning/Trainning.scss";
 @import "./boxnews/BoxNews.scss";
+@import "./event/event";
+@import "./eventNow/eventNow";
+@import "./highlightVideo/highlightVideo";
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+@import "./workingstudent/workingStudent";
+@import "./header/Header.scss";
+@import "./footer/Footer.scss";
