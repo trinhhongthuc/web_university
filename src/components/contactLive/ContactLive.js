@@ -64,7 +64,10 @@ const ContactLive = () => {
             </div>
             <h3>Message with UDCKers</h3>
 
-            <div className="message-now-header-close">
+            <div
+              className="message-now-header-close"
+              onClick={() => setShowMessage(!showMessage)}
+            >
               <CloseIcon />
             </div>
           </div>
