@@ -1,19 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { a } from "react-router-dom";
 import { FaUniversity } from "@react-icons/all-files/fa/FaUniversity";
 import { GoMortarBoard } from "@react-icons/all-files/go/GoMortarBoard";
 import { AiOutlineArrowUp } from "@react-icons/all-files/ai/AiOutlineArrowUp";
 import { FaRegAddressCard } from "@react-icons/all-files/fa/FaRegAddressCard";
 import Container from "@mui/material/Container";
+import AOS from "aos";
 
 export const Training = () => {
   const styleDefault = {
     backgroundColor: "#2499dc",
     color: "#fff",
   };
-
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <Container>
+    <Container data-aos="fade-up" data-aos-duration="1000">
       <ul className="training-list">
         <li className="training-list-item">
           <a href="/training" id="test">

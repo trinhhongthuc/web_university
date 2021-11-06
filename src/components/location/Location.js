@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Container from "@mui/material/Container";
 import Heading from "./../heading/Heading";
+import AOS from "aos";
 
 const Location = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <div
@@ -11,17 +15,9 @@ const Location = () => {
           backgroundColor: "#f5f5f5",
           marginTop: "30px",
         }}
+        data-aos="fade-up"
+        data-aos-duration="1000"
       >
-        <Container>
-          <div className="col-xl-12">
-            <Heading
-              heading="Vị trí"
-              color="#2b2666"
-              fontSize="30px"
-              outLine={true}
-            />
-          </div>
-        </Container>
         <Container>
           <div className="row">
             <div className="col-xl-12">

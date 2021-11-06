@@ -5,35 +5,35 @@ import Heading2 from "./../heading2/Heading2";
 const EventNow = () => {
   const data = [
     {
-      day: 29,
-      month: "thang 9",
+      day: "03",
+      month: "thang 11",
       description:
-        "Tọa đàm “Bảo vệ môi trường và ứng phó với biến đổi khí hậuvùng đồng bằng",
-      time: "08:00 - 00:00",
+        "Gặp gỡ UDCKers là đại điện tham gia chương trình “Giao lưu hữu nghị thanh niên Việt Nam - Lào – Campuchia” ",
+      time: "16:00 - 17:00",
+    },
+
+    {
+      day: "03",
+      month: "thang 11",
+      description:
+        "UDCK tiếp tục triển khai dạy và học trực tuyến để ứng phó với dịch Covid-19 ",
+      time: "09:20 - 11:00",
     },
 
     {
       day: 29,
-      month: "thang 9",
+      month: "thang 10",
       description:
-        "Tọa đàm “Xây dựng chuỗi giá trị ngành và sản phẩm vùng đồng bằng sông ",
-      time: "13:00 - 16:00",
+        "Sở Kế hoạch và Đầu tư tỉnh Kon Tum phối hợp với UDCK tổ chức chương trình tập huấn trực tuyến “Lập dự án khởi nghiệp 2021” ",
+      time: "16:00 - 17:00",
     },
 
     {
-      day: 29,
-      month: "thang 9",
+      day: "26",
+      month: "thang 10",
       description:
-        "HỘI THẢO TRỰC TUYẾN “ĐÁNH GIÁ HOẠT ĐỘNG HỌC TẬP TRONG DẠY HỌC ",
-      time: "08:00 - 12:00",
-    },
-
-    {
-      day: 29,
-      month: "thang 9",
-      description:
-        "HỘI THẢO KHOA HỌC “ĐỊNH HƯỚNG PHÁT TRIỂN NGUỒN NHÂN LỰC PHỤC ",
-      time: "07:30 - 11:00",
+        "Tạp chí Khoa học và Công nghệ Đại học Đà Nẵng được đưa vào Hệ thống trích dẫn Đông Nam Á (ACI)",
+      time: "14:30 - 16:00",
     },
   ];
   return (
@@ -57,7 +57,7 @@ const EventNow = () => {
                         : itemValue.description}
                     </p>
 
-                    <p className="wrapper-time">
+                    <p className="wrapper-time mt-3">
                       <AccessTimeIcon />
                       <span>{itemValue.time}</span>
                     </p>

@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Container from "@mui/material/Container";
 import RoomIcon from "@mui/icons-material/Room";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import EmailIcon from "@mui/icons-material/Email";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import AOS from "aos";
 
 const Footer = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <footer className="footer">
+    <footer className="footer" data-aos="fade-up" data-aos-duration="1000">
       <Container>
         <div className="row">
           <div className="col-xl-4">

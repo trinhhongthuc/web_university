@@ -2,6 +2,7 @@ import React from "react";
 import Container from "@mui/material/Container";
 import Logo from "../../assets/image/LogoUDCK.png";
 import bgHeader from "../../assets/image/imgBackgroundInner1.jpg";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <header
@@ -12,32 +13,27 @@ const Header = () => {
         <div className="row">
           <div className="col-xl-12">
             <div className="header-wrapper">
-              <div className="header-logo">
+              <Link to="/" className="header-logo">
                 <img src={Logo} alt="" />
-              </div>
+              </Link>
 
               <div className="header-menu">
                 <ul className="header-menu-ul">
                   <li>
-                    <a href="#">Tin Tức</a>
+                    <Link to="/">Trang chủ</Link>
                   </li>
                   <li>
-                    <a href="#">Sự Kiện</a>
+                    <Link to="/tintuc">Tin Tức</Link>
                   </li>
                   <li>
-                    <a href="#">Nghiên Cứu</a>
+                    <Link to="/tuyensinh">Tuyển Sinh</Link>
                   </li>
                   <li>
-                    <a href="#">Đào Tạo</a>
+                    <Link to="/daotao">Đào Tạo</Link>
                   </li>
+
                   <li>
-                    <a href="#">Đối Ngoại</a>
-                  </li>
-                  <li>
-                    <a href="#">Sinh Viên</a>
-                  </li>
-                  <li>
-                    <a href="#">Ngôn Ngữ</a>
+                    <Link to="/sinhvien">Sinh Viên</Link>
                   </li>
                 </ul>
               </div>

@@ -1,0 +1,31 @@
+.heading3 {
+    padding: 30px 0 50px 0;
+}
+
+.headding {
+    &3-title {
+        font-size: 30px;
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    &3-note {
+        font-size: 22px;
+        color: $color-white;
+        font-weight: 400;
+    }
+}
+.border {
+    &-bottom {
+        width: 200px;
+        height: 5px;
+        background-color: $color-secondary;
+    }
+}
+
+.heading3-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
